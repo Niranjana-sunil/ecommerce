@@ -231,7 +231,7 @@ class UserLogoutView(APIView):
 
 
 class AdminUserView(APIView):
-    permission_classes=[IsAuthenticated]
+    #permission_classes=[IsAuthenticated]
     def get(self, request):
 
         users = Users.objects.all()
